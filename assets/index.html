@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <h1 class="encabezado">Calculo de Renta</h1>
+    <div>
+    <p id="parrafo" name="parrafo"> </p> 
+    <form> 
+        Nombre: <input type="text" id="nombre"/> 
+        <br/> 
+        Renta: <input type="text" id="renta"/> 
+        <br/> 
+        Situación Laboral:   Honorarios <input type ="radio" id="rhonorario" name="contrato" value ="honorario" /> 
+        Plazo fijo <input type ="radio" id="rpfijo" name="contrato" value="Plazo fijo" /> 
+        Indefinido <input type ="radio" id="rindefinido" name="contrato" value="Indefinido" />
+        <br/> 
+        <button type ="button" onclick ="calcular()">Calcular</button> 
+        <button type ="button" onclick ="limpiar()">Limpiar</button>
+    </div>
+    <div class="total-renta">
+        <p>Valor líquido a pagar: $<span class="valor-total"></span></p>
+    </div>
+
+    </form> 
+    <script src="script.js"></script>
+</body>
+</html>
